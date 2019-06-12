@@ -2,10 +2,10 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Link;
+use App\categories;
 use Faker\Generator as Faker;
 
-$factory->define(Link::class, function (Faker $faker) {
+$factory->define(categories::class, function (Faker $faker) {
     return [
         //
     ];
