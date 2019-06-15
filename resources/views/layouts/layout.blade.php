@@ -11,13 +11,18 @@
   <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet" />
 </head>
 <body>
-
-  @section('sidebar')
-      This is the master sidebar.
-  @show
-
   <div class="container">
-    @yield('content')
+      <div class="page-header">
+        @yield('header')
+      </div>
+
+      @if (Session::has('success'))
+      <div class="alert alert-success">
+        {{ Session::get('success') }}
+      </div>
+      @endif
+
+      @yield('content')
   </div>
   <script src="{{ asset('js/app.js') }}" type="text/js"></script>
 </body>
