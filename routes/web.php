@@ -45,3 +45,5 @@ Route::get('/submit', function () {
 
     // return redirect('/');
 });
+
+Route::resource('books', 'BookController');
