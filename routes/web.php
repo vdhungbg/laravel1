@@ -47,3 +47,4 @@ Route::get('/submit', function () {
 });
 
 Route::resource('books', 'BookController');
+Route::resource('contacts', 'ContactController');
